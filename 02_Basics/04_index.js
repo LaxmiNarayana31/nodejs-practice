@@ -16,6 +16,7 @@ fs.writeFileSync(filePath, "javaScript learning");
 
 
 
+
 // Read file
 fs.readFile(filePath,'utf8', (error, item) => {  // remove utf8 and try to run 
     console.log(item);
