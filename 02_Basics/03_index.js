@@ -8,7 +8,6 @@
 
 
 
-
 // create multiple files through loop
 const { log } = require('console');
 const fs = require('fs')
