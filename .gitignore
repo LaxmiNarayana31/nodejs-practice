@@ -1,0 +1,5 @@
+# Whatever file written in the .gitignore file that are not pushed to github
+/node_modules
+/package-lock.json
+/02_Basics/files 
+/02_Basics/CRUD
