@@ -9,13 +9,12 @@ It is 5 types:
 3) Built-in middleware (express.static, express.json, express.urlencoded)
 4) Error handling middleware ( app.use(err,req,res,next) )
 5) Thirdparty middleware (bodyparser, cookieparser) 
-
 */
-
 
 
 const express = require('express');
 const app = express();
+
 
 // make a middleware
 const reqFilter = (req, res, next) => {
