@@ -4,7 +4,8 @@ const path = require("path");
 const app = express();
 const publicPath = path.join(__dirname, "HTML");
 
-// app.use(express.static(publicPath)); // static: it is used to load static pages
+
+// app.use(express.static(publicPath)); // static: it is used to load static pages means no backend 
 
 
 // remove file extension from our wesite like .html from our website
@@ -15,19 +16,16 @@ app.get('', (req, resp) => {
 })
 
 
-
 // http://localhost:5000/about
 app.get('/about', (req, resp) => {
     resp.sendFile(`${publicPath}/about.html`)
 })
 
 
-
 // http://localhost:5000/help
 app.get('/help', (req, resp) => {
     resp.sendFile(`${publicPath}/help.html`)
 })
-
 
 
 // http://localhost:5000/contact
