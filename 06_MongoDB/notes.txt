@@ -1,0 +1,29 @@
+MongoDB is a NoSQL database
+The data stored in a collection
+Collection don't have row and columns
+Data is stored in the form of objects
+MongoDB is beneficial when data comes in unstructured format
+
+in MongoDB data stored like below format:
+
+{
+    "_id": Objectid("5c237223fice7b2e7b4e49ff"),
+    "firstName": "Shiva",
+    "lastName": "Pattanayak",
+    "age": 23,
+    "country": "India",
+    "address": {
+        "state": "Odisha",
+        "city": "BBSR"
+    }
+}
+
+
+
+
+
+
+// Connect Node with MongoDB
+install MongoDB package ->  MongoDB Node JS driver (npm i mongodb)
+connection with node js
+show data from mongoDB
