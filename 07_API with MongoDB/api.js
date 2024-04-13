@@ -1,10 +1,12 @@
+// get method in API
+
 const express = require("express");
 const dbConnect = require("..06_MongoDB/mongodb");
 
 const app = express();
 
 
-// IQ: in the get method, we can pass body or not -> No
+// Interview Ques: in the get method, we can pass body or not -> No
 // http://localhost:5000/
 app.get("/", async (req, resp) => {
   let data = await dbConnect();
