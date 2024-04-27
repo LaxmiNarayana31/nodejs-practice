@@ -11,7 +11,7 @@ app.use(express.static(path.join(path.resolve(), "public")))
 // Setting up View Engine
 app.set("view engine", "ejs");
 
-// what is our complete app written in Node JS. No front-end libraries are used  
+// what if our complete app written in Node JS. No front-end libraries are used  
 app.get("/", (req, res) => {
     res.render("index", {name: "Shiva"})
 })
