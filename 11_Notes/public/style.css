@@ -5,8 +5,8 @@
 }
 
 main {
-    background-color: #fff;
-    height: 180vh;
+    background-color: lightgrey;
+    height: 100vh;
     display: grid;
     place-items: center;
 }
@@ -17,7 +17,7 @@ form {
     flex-direction: column;
     gap:  2rem;
     min-width: 600px;
-    width: 60%;
+    width: 30%;
     height: 70%;
     margin: auto;
     padding: 8rem 4rem;
