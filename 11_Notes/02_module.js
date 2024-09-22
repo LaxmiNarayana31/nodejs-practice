@@ -5,10 +5,8 @@
                     file based module
 */
 
-const langName = "JavaScript"
-module.exports = langName
-
-
+const langName = "JavaScript";
+module.exports = langName;
 
 // to import it another file
-const name = require("./02_module")
+const name = require("./02_module");

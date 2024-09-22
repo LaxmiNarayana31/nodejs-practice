@@ -1,4 +1,4 @@
-// creating a webpage 
+// creating a webpage
 const express = require("express");
 const app = express();
 

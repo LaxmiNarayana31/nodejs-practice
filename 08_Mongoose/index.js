@@ -10,7 +10,7 @@ const main = async () => {
     brand: String,
     category: String,
   });
-    
+
   const ProductsModel = mongoose.model(("products", ProductSchema));
   let data = new ProductsModel({
     name: "MacBook",
@@ -22,6 +22,6 @@ const main = async () => {
   console.log(result);
 };
 
-main(); 
+main();
 
 // IQ: By using request, to get the body waht you will be used. -> bodyparser or express.json function

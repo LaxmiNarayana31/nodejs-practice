@@ -10,7 +10,6 @@ const dbConnect = require("./mongodb");
 // })
 // console.log(dbConnect());
 
-
 // 2nd way to handle promises (Modern Syntax)
 const main = async () => {
   let data = await dbConnect();

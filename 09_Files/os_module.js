@@ -2,10 +2,10 @@
 
 const os = require("os");
 
-// imp functions 
-console.log(os.arch());  // output: x64
+// imp functions
+console.log(os.arch()); // output: x64
 
-console.log(os.type());  // output: Windows_NT
+console.log(os.type()); // output: Windows_NT
 
 console.log(os.version()); // output: Windows 11 Home Single Language
 
@@ -19,4 +19,4 @@ console.log(os.machine()); // output: x86_64
 
 console.log(os.platform()); // output: win32
 
-console.log(os.userInfo()); // return system information in a object 
+console.log(os.userInfo()); // return system information in a object

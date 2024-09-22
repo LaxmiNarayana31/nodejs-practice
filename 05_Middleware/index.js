@@ -11,30 +11,25 @@ It is 5 types:
 5) Thirdparty middleware (bodyparser, cookieparser) 
 */
 
-
-const express = require('express');
+const express = require("express");
 const app = express();
-
 
 // make a middleware
 const reqFilter = (req, res, next) => {
-    // console.log(reqFilter);
+  // console.log(reqFilter);
 
-    next();
+  next();
 };
 app.use(reqFilter);
-
 
 // http://localhost:5000/
 app.get("/", (req, resp) => {
   resp.send("Welcome to Home Page");
 });
 
-
 // http://localhost:5000/users
 app.get("/users", (req, resp) => {
   resp.send("Welcome to Users Page");
 });
 
-
-app.listen(5000); 
+app.listen(5000);

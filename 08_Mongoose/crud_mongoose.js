@@ -11,7 +11,6 @@ const main = async () => {
     category: String,
   });
 
-    
   // create data in database
   const saveInDB = mongoose.model("products", ProductSchema);
   let data = new ProductsModel({
@@ -25,7 +24,6 @@ const main = async () => {
 };
 
 main();
-
 
 // update data in database
 const updateInDB = async () => {
@@ -41,8 +39,6 @@ const updateInDB = async () => {
 
 updateInDB();
 
-
-
 // delete data in database
 const deleteInDB = async () => {
   const Product = mongoose.model("products", ProductSchema);
@@ -52,13 +48,11 @@ const deleteInDB = async () => {
 
 deleteInDB();
 
-
-
 // read data in database
 const findInDB = async () => {
   const Product = mongoose.model("products", ProductSchema);
   let data = await Product.find();
-  // let data = await Product.find({name: "MacBook"}); // to find specific data 
+  // let data = await Product.find({name: "MacBook"}); // to find specific data
   console.log(data);
 };
 

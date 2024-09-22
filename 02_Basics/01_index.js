@@ -7,10 +7,13 @@
 4) Put data in another file
 */
 
-
-const http = require('http')
-http.createServer((req, resp) => {
-    resp.writeHead(200, { 'Content-Type': 'application\json' });
-    resp.write(JSON.stringify({ name: "JavaScript", email: "javascript@gmail.com" }))
-    resp.end()
-}).listen(5000)
+const http = require("http");
+http
+  .createServer((req, resp) => {
+    resp.writeHead(200, { "Content-Type": "applicationjson" });
+    resp.write(
+      JSON.stringify({ name: "JavaScript", email: "javascript@gmail.com" })
+    );
+    resp.end();
+  })
+  .listen(5000);

@@ -5,7 +5,6 @@ const dbConnect = require("..06_MongoDB/mongodb");
 
 const app = express();
 
-
 // http://localhost:5000/
 app.get("/", async (req, resp) => {
   let data = await dbConnect();
@@ -14,11 +13,9 @@ app.get("/", async (req, resp) => {
   resp.send(data);
 });
 
-
 app.post("/", async (req, resp) => {
-  resp.send({name:"sumit"})
+  resp.send({ name: "sumit" });
 });
-
 
 app.listen(5000);
 

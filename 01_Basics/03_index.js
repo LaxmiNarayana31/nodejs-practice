@@ -19,4 +19,4 @@ Then write the folder/fil names in gitignore file that you don't want to push
 Example: you don't want to push the node_modules folder
          simply write -->  /node_modules -> in gitignore file
 
-*/ 
+*/

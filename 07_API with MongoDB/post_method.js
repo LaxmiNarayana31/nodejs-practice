@@ -6,15 +6,13 @@ const dbConnect = require("..06_MongoDB/mongodb");
 const app = express();
 
 // how to get data in Node JS send by postman
-app.use(express.json())
+app.use(express.json());
 
-
-app.post('/', async (req, resp) => {
-    // console.log(req.body);
-    let data = await dbConnect();
-    let result = await data.insert(req.body)
-    resp.send(result)
-})
-
+app.post("/", async (req, resp) => {
+  // console.log(req.body);
+  let data = await dbConnect();
+  let result = await data.insert(req.body);
+  resp.send(result);
+});
 
 app.listen(5000);

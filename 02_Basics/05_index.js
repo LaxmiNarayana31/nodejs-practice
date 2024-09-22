@@ -10,21 +10,16 @@ setTimeout(() => {
 
 console.log(a + b); // it will executes first
 
-
-
-
 // Handle Asynchronous data in node js
 // To handle this we can use callbacks or promises or async await
 let c = 10;
 let d = 5;
-
 
 let waitingData = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve(20);
   }, 2000);
 });
-
 
 waitingData.then((data) => {
   console.log(c + data);

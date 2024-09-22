@@ -13,7 +13,6 @@ some modules no need to import for use called Global modules and other are calle
 Node JS is a Async language
 */
 
-
-const fs = require('fs'); // fs-> file system  (in-build module in node js)
+const fs = require("fs"); // fs-> file system  (in-build module in node js)
 // fs.writeFileSync("hello.text", "This will create a file called hello.txt")
-console.log(__dirname)
+console.log(__dirname);
